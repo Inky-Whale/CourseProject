@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfProductDal:IProductDal
+    public class EfProductDal : IProductDal
     {
         public List<Product> GetAll(Expression<Func<Product, bool>> filter = null)
         {

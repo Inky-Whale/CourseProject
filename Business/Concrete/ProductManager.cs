@@ -26,6 +26,11 @@ namespace Business.Concrete
 
         }
 
+        public void Add(Product product)
+        {
+            _productDal.Add(product);
+        }
+
         public List<Product> GetAllByCategoryId(int id)
         {
             return _productDal.GetAll(p => p.CategoryId == id);
